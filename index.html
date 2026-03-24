@@ -6,7 +6,7 @@
 <title>AI Automation Workflows</title>
 <script>
 (function(){
-  var PASS = 'test';
+  var PASS = 'aiops';
   var KEY  = 'aiops_auth';
   if(sessionStorage.getItem(KEY) !== '1'){
     document.addEventListener('DOMContentLoaded', function(){
@@ -91,7 +91,7 @@ header{border-bottom:1px solid var(--border);padding:20px 48px;display:flex;alig
 .hero-sub{font-size:15px;color:var(--muted);max-width:540px;line-height:1.7;margin-bottom:36px;}
 
 /* ── SUMMARY CARDS ── */
-.summary-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:1100px;margin:0 auto 52px;padding:0 48px;}
+.summary-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;max-width:1100px;margin:0 auto 52px;padding:0 48px;}
 .summary-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 16px;cursor:pointer;transition:border-color 0.2s,background 0.2s;position:relative;overflow:hidden;}
 .summary-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--border2);transition:background 0.2s;}
 .summary-card:hover{border-color:var(--border2);background:var(--surface2);}
@@ -250,12 +250,15 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
     <button class="nav-tab" onclick="switchTab(4,this)">
       <span class="tab-num">05</span> RTP Monitoring
     </button>
+    <button class="nav-tab" onclick="switchTab(5,this)">
+      <span class="tab-num">06</span> SEO Plan
+    </button>
   </div>
 </nav>
 
 <section class="hero">
   <div class="hero-eyebrow">Project Manager Reference &mdash; 2026</div>
-  <h1>5 Automations.<br><em>Step by step.</em></h1>
+  <h1>6 Automations.<br><em>Step by step.</em></h1>
   <p class="hero-sub">What gets built, who does what, and how long each automation takes &mdash; written for the project manager, not the developer.</p>
 </section>
 
@@ -263,31 +266,36 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
   <div class="summary-card in-progress active" onclick="switchTab(0);scrollToWorkflows();">
     <div class="sc-num">01</div>
     <div class="sc-title">Chatwoot AI Support</div>
-    <div class="sc-weeks"><strong>6&ndash;8 weeks</strong></div>
+    <div class="sc-weeks"><strong>~1 week left</strong> &middot; 2 platforms</div>
     <div class="sc-progress-wrap">
-      <div class="sc-progress-bar"><div class="sc-progress-fill" style="width:87%"></div></div>
-      <div class="sc-progress-label">Week 7 of 8 &mdash; In progress</div>
+      <div class="sc-progress-bar"><div class="sc-progress-fill" style="width:62%"></div></div>
+      <div class="sc-progress-label">QA testing &mdash; In progress</div>
     </div>
   </div>
   <div class="summary-card" onclick="switchTab(1);scrollToWorkflows();">
     <div class="sc-num">02</div>
     <div class="sc-title">Deposit Automation</div>
-    <div class="sc-weeks"><strong>5&ndash;7 weeks</strong> &middot; 37+ platforms</div>
+    <div class="sc-weeks"><strong>7–10 weeks</strong></div>
   </div>
   <div class="summary-card" onclick="switchTab(2);scrollToWorkflows();">
     <div class="sc-num">03</div>
     <div class="sc-title">Marketing Content</div>
-    <div class="sc-weeks"><strong>6&ndash;9 weeks</strong> &middot; All channels</div>
+    <div class="sc-weeks"><strong>8–12 weeks</strong></div>
   </div>
   <div class="summary-card" onclick="switchTab(3);scrollToWorkflows();">
     <div class="sc-num">04</div>
     <div class="sc-title">Bonus &amp; Coupons</div>
-    <div class="sc-weeks"><strong>7&ndash;10 weeks</strong></div>
+    <div class="sc-weeks"><strong>10–14 weeks</strong></div>
   </div>
   <div class="summary-card" onclick="switchTab(4);scrollToWorkflows();">
     <div class="sc-num">05</div>
     <div class="sc-title">RTP Monitoring</div>
-    <div class="sc-weeks"><strong>8&ndash;11 weeks</strong></div>
+    <div class="sc-weeks"><strong>2–3 weeks</strong></div>
+  </div>
+  <div class="summary-card" onclick="switchTab(5);scrollToWorkflows();">
+    <div class="sc-num">06</div>
+    <div class="sc-title">SEO Plan</div>
+    <div class="sc-weeks"><strong>6–9 weeks</strong></div>
   </div>
 </div>
 
@@ -300,26 +308,26 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="wf-head-text">
         <h2>Chatwoot &mdash; AI customer support</h2>
         <div class="wf-head-meta">
-          <span class="badge badge-duration">6&ndash;8 weeks total</span>
-          <span class="badge badge-progress">In progress &mdash; Week 7 of 8</span>
-          <span class="badge badge-live">Pilot live</span>
+          <span class="badge badge-duration">~2&ndash;3 weeks remaining</span>
+          <span class="badge badge-progress">QA testing &mdash; in progress</span>
+          <span class="badge badge-live">2 platforms</span>
         </div>
       </div>
     </div>
     <div class="wf-progress-wrap">
       <div class="wf-progress-top">
         <span class="wf-progress-title">Overall progress</span>
-        <span class="wf-progress-pct">87% complete</span>
+        <span class="wf-progress-pct">62% complete</span>
       </div>
-      <div class="wf-progress-bar"><div class="wf-progress-fill" style="width:87%"></div></div>
+      <div class="wf-progress-bar"><div class="wf-progress-fill" style="width:62%"></div></div>
       <div class="wf-progress-steps">
         <span class="wf-ps done">Wk 1&ndash;2</span>
         <span class="wf-ps done">Wk 2&ndash;3</span>
         <span class="wf-ps done">Wk 3&ndash;4</span>
         <span class="wf-ps done">Wk 4&ndash;5</span>
         <span class="wf-ps done">Wk 5&ndash;6</span>
-        <span class="wf-ps now">Wk 6&ndash;7 &bull; NOW</span>
-        <span class="wf-ps">Wk 7&ndash;8</span>
+        <span class="wf-ps done">Wk 5&ndash;6</span>
+        <span class="wf-ps now">QA testing &bull; NOW</span>
       </div>
     </div>
     <div class="legend">
@@ -346,7 +354,7 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
             <div class="step-header">
-              <div class="step-title-row"><div class="step-title">Install Chatwoot on all platforms</div><span class="step-done-badge">Done</span></div>
+              <div class="step-title-row"><div class="step-title">Install Chatwoot on 2 remaining platforms</div><span class="step-done-badge">Done</span></div>
               <span class="step-toggle">&#9660;</span>
             </div>
             <div class="step-desc-wrap"><div class="step-desc">Install the live chat widget on all gaming platforms. Configure the inbox settings, agent accounts, working hours, and brand styling. Verify that test messages arrive correctly in the dashboard.</div>
@@ -375,36 +383,25 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
             <div class="step-who">Developer + Operations</div></div>
           </div>
         </div>
-        <div class="step-row s-review done" onclick="toggleStep(this)">
+        <div class="step-row s-review now" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
             <div class="step-header">
-              <div class="step-title-row"><div class="step-title">Testing &mdash; simulate 100+ player scenarios</div><span class="step-done-badge">Done</span></div>
+              <div class="step-title-row"><div class="step-title">Testing &mdash; simulate 100+ player scenarios</div><span class="step-now-badge">IN PROGRESS &mdash; NOW</span></div>
               <span class="step-toggle">&#9660;</span>
             </div>
             <div class="step-desc-wrap"><div class="step-desc">Operations team runs through every common support scenario: deposit not credited, withdrawal delayed, bonus not applied, account locked. Verify the AI gives correct answers, escalates when it should, and maintains a professional tone throughout.</div>
-            <div class="step-who">PM + Operations team</div></div>
-          </div>
-        </div>
-        <div class="step-row s-build now" onclick="toggleStep(this)">
-          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
-          <div class="step-body">
-            <div class="step-header">
-              <div class="step-title-row"><div class="step-title">Pilot launch &mdash; first platform only</div><span class="step-now-badge">IN PROGRESS &mdash; WEEK 7</span></div>
-              <span class="step-toggle">&#9660;</span>
-            </div>
-            <div class="step-desc-wrap"><div class="step-desc">Go live on the first platform with the AI running alongside human agents for 1&ndash;2 weeks. Agents monitor every AI response in real time and can override or correct at any point. Track satisfaction scores, resolution rates, and escalation frequency daily.</div>
-            <div class="step-who">Operations monitors daily</div></div>
+            <div class="step-who">PM + Operations team &mdash; active now</div></div>
           </div>
         </div>
         <div class="step-row s-launch" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
             <div class="step-header">
-              <div class="step-title-row"><div class="step-title">Full rollout to all platforms</div></div>
+              <div class="step-title-row"><div class="step-title">Full rollout to 2 remaining platforms</div></div>
               <span class="step-toggle">&#9660;</span>
             </div>
-            <div class="step-desc-wrap"><div class="step-desc">Once the pilot is stable and scoring above 80% satisfaction, deploy the AI across all platforms. Human agents shift from answering tickets to handling escalations only. The AI handles 80&ndash;85% of all conversations automatically, 24 hours a day.</div>
+            <div class="step-desc-wrap"><div class="step-desc">Once the pilot is stable and scoring above 80% satisfaction, deploy to the 2 remaining platforms. The other platforms are already live. Human agents shift to escalations only — AI handles 80–85% of all conversations across all platforms.</div>
             <div class="step-who">Developer deploys &mdash; Ops monitors</div></div>
           </div>
         </div>
@@ -414,9 +411,9 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
         <div class="tl-cell done"><div class="tl-week">Week 2&ndash;3 &middot; Done</div><div class="tl-label">Platform installation</div><div class="tl-bar"></div></div>
         <div class="tl-cell done"><div class="tl-week">Week 3&ndash;4 &middot; Done</div><div class="tl-label">AI build &amp; training</div><div class="tl-bar"></div></div>
         <div class="tl-cell done"><div class="tl-week">Week 4&ndash;5 &middot; Done</div><div class="tl-label">Escalation setup</div><div class="tl-bar"></div></div>
-        <div class="tl-cell done"><div class="tl-week">Week 5&ndash;6 &middot; Done</div><div class="tl-label">QA &amp; scenario testing</div><div class="tl-bar"></div></div>
-        <div class="tl-cell now"><div class="tl-week">Week 6&ndash;7 &middot; NOW</div><div class="tl-label">Pilot launch &mdash; live</div><div class="tl-bar"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 7&ndash;8</div><div class="tl-label">Full deployment</div><div class="tl-bar" style="background:var(--border2)"></div></div>
+        <div class="tl-cell now"><div class="tl-week">Week 5&ndash;6 &middot; NOW</div><div class="tl-label">QA &amp; scenario testing</div><div class="tl-bar"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 6&ndash;7</div><div class="tl-label">Pilot launch</div><div class="tl-bar" style="background:var(--border2)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 7&ndash;9</div><div class="tl-label">Deploy to 2 remaining</div><div class="tl-bar" style="background:var(--border2)"></div></div>
       </div>
     </div>
   </div>
@@ -428,7 +425,7 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="wf-head-text">
         <h2>Deposit automation</h2>
         <div class="wf-head-meta">
-          <span class="badge badge-duration">5&ndash;7 weeks total</span>
+          <span class="badge badge-duration">7&ndash;10 weeks</span>
           <span class="badge badge-planned">Planned &mdash; 37+ platforms</span>
         </div>
       </div>
@@ -493,10 +490,10 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="timeline-col">
         <div class="tl-cell"><div class="tl-week">Week 1</div><div class="tl-label">Process mapping</div><div class="tl-bar" style="background:var(--border2)"></div></div>
         <div class="tl-cell"><div class="tl-week">Week 2</div><div class="tl-label">First platform script built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 2&ndash;3</div><div class="tl-label">Error handling &amp; alerts</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 3&ndash;5</div><div class="tl-label">All platforms built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 5&ndash;6</div><div class="tl-label">Full testing &amp; sign-off</div><div class="tl-bar" style="background:var(--amber)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 6&ndash;7</div><div class="tl-label">Live &mdash; fully automated</div><div class="tl-bar" style="background:var(--green)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 2&ndash;4</div><div class="tl-label">Error handling &amp; alerts</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 4&ndash;7</div><div class="tl-label">All platforms built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 7&ndash;9</div><div class="tl-label">Full testing &amp; sign-off</div><div class="tl-bar" style="background:var(--amber)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 9&ndash;10</div><div class="tl-label">Live &mdash; fully automated</div><div class="tl-bar" style="background:var(--green)"></div></div>
       </div>
     </div>
   </div>
@@ -508,7 +505,7 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="wf-head-text">
         <h2>Marketing content automation</h2>
         <div class="wf-head-meta">
-          <span class="badge badge-duration">6&ndash;9 weeks total</span>
+          <span class="badge badge-duration">8&ndash;12 weeks</span>
           <span class="badge badge-planned">Planned &mdash; all channels</span>
         </div>
       </div>
@@ -581,11 +578,11 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="timeline-col">
         <div class="tl-cell"><div class="tl-week">Week 1</div><div class="tl-label">Content library audit</div><div class="tl-bar" style="background:var(--border2)"></div></div>
         <div class="tl-cell"><div class="tl-week">Week 1&ndash;2</div><div class="tl-label">Trigger &amp; channel mapping</div><div class="tl-bar" style="background:var(--border2)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 2&ndash;4</div><div class="tl-label">AI generator built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 4&ndash;5</div><div class="tl-label">Channel integrations</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 5&ndash;7</div><div class="tl-label">Review &amp; refinement</div><div class="tl-bar" style="background:var(--amber)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 7&ndash;8</div><div class="tl-label">A/B testing framework</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 8&ndash;9</div><div class="tl-label">Live &mdash; automated</div><div class="tl-bar" style="background:var(--green)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 2&ndash;5</div><div class="tl-label">AI generator built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 5&ndash;7</div><div class="tl-label">Channel integrations</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 7&ndash;9</div><div class="tl-label">Review &amp; refinement</div><div class="tl-bar" style="background:var(--amber)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 9&ndash;11</div><div class="tl-label">A/B testing framework</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 11&ndash;12</div><div class="tl-label">Live &mdash; automated</div><div class="tl-bar" style="background:var(--green)"></div></div>
       </div>
     </div>
   </div>
@@ -597,7 +594,7 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="wf-head-text">
         <h2>Bonus and coupon planning</h2>
         <div class="wf-head-meta">
-          <span class="badge badge-duration">7&ndash;10 weeks total</span>
+          <span class="badge badge-duration">10&ndash;14 weeks</span>
           <span class="badge badge-planned">Planned</span>
         </div>
       </div>
@@ -670,11 +667,11 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="timeline-col">
         <div class="tl-cell"><div class="tl-week">Week 1&ndash;2</div><div class="tl-label">Player data export &amp; cleanup</div><div class="tl-bar" style="background:var(--border2)"></div></div>
         <div class="tl-cell"><div class="tl-week">Week 2</div><div class="tl-label">Segment definitions agreed</div><div class="tl-bar" style="background:var(--border2)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 3&ndash;5</div><div class="tl-label">AI engine built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 5&ndash;6</div><div class="tl-label">Stripe integration</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 6&ndash;8</div><div class="tl-label">Backtesting &amp; calibration</div><div class="tl-bar" style="background:var(--amber)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 8&ndash;9</div><div class="tl-label">Weekly approval flow</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 9&ndash;10</div><div class="tl-label">Live &mdash; automated</div><div class="tl-bar" style="background:var(--green)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 3&ndash;6</div><div class="tl-label">AI engine built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 6&ndash;8</div><div class="tl-label">Stripe integration</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 8&ndash;11</div><div class="tl-label">Backtesting &amp; calibration</div><div class="tl-bar" style="background:var(--amber)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 11&ndash;13</div><div class="tl-label">Weekly approval flow</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 13&ndash;14</div><div class="tl-label">Live &mdash; automated</div><div class="tl-bar" style="background:var(--green)"></div></div>
       </div>
     </div>
   </div>
@@ -686,7 +683,7 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
       <div class="wf-head-text">
         <h2>RTP monitoring and planning</h2>
         <div class="wf-head-meta">
-          <span class="badge badge-duration">8&ndash;11 weeks total</span>
+          <span class="badge badge-duration">2&ndash;3 weeks</span>
           <span class="badge badge-planned">Planned &mdash; all games</span>
         </div>
       </div>
@@ -702,80 +699,161 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
         <div class="step-row s-setup" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Export 6 months of game payout history</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">Pull historical payout data for every game across all platforms going back at least 6 months. This dataset establishes what &ldquo;normal&rdquo; looks like for each game. Without this baseline, the monitoring system cannot distinguish a genuine anomaly from natural statistical variance.</div>
-            <div class="step-who">Operations + Developer</div></div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Pull previous day in/out data from all platforms</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Set up a daily automated export that pulls total bets placed and total payouts for each game from the previous day. This is the raw data the monitoring runs on. Needs to work reliably across all platforms before anything else is built.</div>
+            <div class="step-who">Developer</div></div>
           </div>
         </div>
         <div class="step-row s-setup" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Agree on RTP targets and alert thresholds</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">For each game category, define the acceptable RTP range and the threshold at which an alert fires. For example: payout above 99% or below 91% over any 48-hour window, or a sudden 3% shift from the 30-day average. These thresholds become the rules the monitoring system enforces automatically.</div>
-            <div class="step-who">PM + Operations leadership</div></div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Agree on the target RTP range</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Confirm the acceptable RTP band with the team &mdash; target is 60&ndash;65%. Define the alert levels: a soft warning when RTP drifts outside this range, and an urgent alert if it goes significantly beyond. This decision takes 30 minutes but is the foundation for everything else.</div>
+            <div class="step-who">PM + Operations</div></div>
           </div>
         </div>
         <div class="step-row s-build" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Build the live data pipeline</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">Create the data connection that pulls real-time payout statistics from each platform every hour. This pipeline is the heartbeat of the entire monitoring system. It needs to be reliable and tested across all platforms before any monitoring logic is built on top of it.</div>
-            <div class="step-who">Developer (critical infrastructure)</div></div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Build the daily RTP dashboard</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Build a simple daily report showing yesterday&rsquo;s overall RTP per platform &mdash; green if inside 60&ndash;65%, amber if close to the edge, red if outside it. Delivered automatically every morning by email or Slack. No manual checking required from this point.</div>
+            <div class="step-who">Developer</div></div>
           </div>
         </div>
         <div class="step-row s-build" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Build the anomaly detection and alert system</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">Program the monitoring rules based on the agreed thresholds. Add AI analysis on top so that when an alert fires, the system automatically generates a plain-English explanation &mdash; making alerts immediately actionable without requiring technical interpretation.</div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Build the coupon planning tool</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">When RTP is trending high (paying out too much), the system suggests coupon and bonus adjustments to bring it back into range &mdash; for example, reducing bonus amounts or tightening wagering requirements. When RTP is low, it suggests more generous offers to stimulate play. Recommendations are reviewed by an operator before being applied.</div>
+            <div class="step-who">Developer + PM</div></div>
+          </div>
+        </div>
+        <div class="step-row s-review" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Test against 2&ndash;3 weeks of real data</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Run the dashboard and coupon suggestions against recent real data. Verify the RTP calculations are accurate, the colour-coding is correct, and the coupon recommendations make sense. Operations team checks a few days manually to confirm everything matches.</div>
+            <div class="step-who">PM + Operations</div></div>
+          </div>
+        </div>
+        <div class="step-row s-launch" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Live &mdash; daily monitoring active</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Daily report lands in the team&rsquo;s inbox every morning. RTP is kept between 60&ndash;65% by acting on the coupon recommendations. Manual tracking in spreadsheets is replaced entirely. Takes under 10 minutes of operator time per day to review and act.</div>
+            <div class="step-who">Ops: 10 min/day review</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-col">
+        <div class="tl-cell"><div class="tl-week">Day 1&ndash;3</div><div class="tl-label">Daily data pull set up</div><div class="tl-bar" style="background:var(--border2)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Day 3</div><div class="tl-label">RTP target range agreed</div><div class="tl-bar" style="background:var(--border2)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Day 3&ndash;6</div><div class="tl-label">Daily dashboard built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Day 6&ndash;10</div><div class="tl-label">Coupon planning tool built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Day 10&ndash;14</div><div class="tl-label">Testing &amp; validation</div><div class="tl-bar" style="background:var(--amber)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Day 14&ndash;21</div><div class="tl-label">Live &mdash; monitoring active</div><div class="tl-bar" style="background:var(--green)"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ 06 SEO ═══════════ -->
+  <div class="workflow-block" id="wb5">
+    <div class="wf-head">
+      <div class="wf-number">06</div>
+      <div class="wf-head-text">
+        <h2>SEO automation &mdash; AI &amp; n8n</h2>
+        <div class="wf-head-meta">
+          <span class="badge badge-duration">6&ndash;9 weeks</span>
+          <span class="badge badge-planned">Planned</span>
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--border2)"></div>Preparation</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>Build</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Review &amp; test</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>Ongoing / live</div>
+    </div>
+    <div class="steps-grid">
+      <div class="steps-col">
+        <div class="step-row s-setup" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Connect keyword and ranking data sources to n8n</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Connect Google Search Console and a keyword tracking tool (e.g. DataForSEO API) to n8n. This creates an automated daily data feed of which pages are ranking, for which keywords, and how positions are changing. All subsequent automations run on top of this live data &mdash; no manual exporting or spreadsheets required.</div>
+            <div class="step-who">Developer</div></div>
+          </div>
+        </div>
+        <div class="step-row s-build" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">AI meta title &amp; description generator</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Build an n8n workflow that reads a list of pages, passes each one to the Claude API with the target keyword, and automatically generates an SEO-optimised meta title and description. Output is saved to a review sheet. A human approves or edits before publishing. What previously took a copywriter hours per batch now takes minutes to generate and 10 minutes to review.</div>
             <div class="step-who">Developer + AI specialist</div></div>
           </div>
         </div>
         <div class="step-row s-build" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Build the RTP change simulator</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">Create the planning tool that lets operators model the financial impact of a proposed RTP change before committing to it. An operator enters the game name, current RTP, and proposed new RTP &mdash; the simulator returns projected impact on gross gaming revenue and player retention. Replaces the current trial-and-error approach entirely.</div>
-            <div class="step-who">Developer</div></div>
-          </div>
-        </div>
-        <div class="step-row s-review" onclick="toggleStep(this)">
-          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
-          <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Validate against 6 months of historical incidents</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">Run the monitoring system against the full historical dataset and verify whether it would have caught every known incident. Tune the thresholds so the system catches genuine problems without generating excessive false alarms that operations would learn to ignore.</div>
-            <div class="step-who">PM + Operations team (2 weeks)</div></div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">AI content brief generator</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">When a new content page is needed, an n8n workflow takes a target keyword, searches for the top-ranking competitor pages, passes them to Claude, and generates a full content brief &mdash; recommended headings, key points to cover, word count target, and internal links to include. A writer receives a ready-to-use brief instead of starting from scratch. Cuts content planning time by around 80%.</div>
+            <div class="step-who">Developer + AI specialist</div></div>
           </div>
         </div>
         <div class="step-row s-build" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Set up daily reports and alert delivery</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">Configure the daily summary report &mdash; emailed to operations every morning &mdash; showing RTP performance for all games the previous day, with deviations highlighted. Urgent anomalies trigger an immediate alert to a designated Discord channel, independent of the daily report schedule.</div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Automated ranking drop alert</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">n8n checks keyword rankings daily and fires a Discord or email alert any time a key page drops more than 3 positions compared to the previous week. The alert includes the page URL, the keyword, the old position, and the new position. No one needs to manually check rankings &mdash; the system notifies the team only when action is needed.</div>
             <div class="step-who">Developer</div></div>
+          </div>
+        </div>
+        <div class="step-row s-build" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">AI internal linking suggester</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">When a new page is published, an n8n workflow passes its content to Claude, which identifies the 3&ndash;5 most relevant existing pages to link to and from. It outputs a list of suggested anchor text and target URLs, ready for a developer to implement in minutes. Strong internal linking is one of the easiest SEO wins &mdash; this automation makes it effortless to do consistently.</div>
+            <div class="step-who">Developer + AI specialist</div></div>
+          </div>
+        </div>
+        <div class="step-row s-build" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Weekly SEO performance report &mdash; auto-generated</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Every Monday, n8n pulls the week&rsquo;s ranking and traffic data from Google Search Console, passes it to Claude, and generates a plain-English weekly summary: which pages gained positions, which dropped, what total organic clicks were, and a one-paragraph recommendation for the coming week. Delivered automatically by email to the team. No analyst needed.</div>
+            <div class="step-who">Developer &mdash; runs automatically</div></div>
+          </div>
+        </div>
+        <div class="step-row s-review" onclick="toggleStep(this)">
+          <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
+          <div class="step-body">
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Test all workflows end-to-end</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">Run each automation against real pages and real keyword data. Check that the AI&rsquo;s meta titles are within character limits and sound natural, that content briefs are genuinely useful, that ranking alerts fire correctly, and that weekly reports are accurate and readable. Adjust Claude prompts where output quality is not good enough before going live.</div>
+            <div class="step-who">PM + content team review</div></div>
           </div>
         </div>
         <div class="step-row s-launch" onclick="toggleStep(this)">
           <div class="step-marker"><div class="step-dot"></div><div class="step-line"></div></div>
           <div class="step-body">
-            <div class="step-header"><div class="step-title-row"><div class="step-title">Live &mdash; daily monitoring and simulator active</div></div><span class="step-toggle">&#9660;</span></div>
-            <div class="step-desc-wrap"><div class="step-desc">The system monitors every game automatically, 24 hours a day. Operators receive a daily report each morning. The simulator is used for all future RTP decisions. Manual game monitoring is completely eliminated.</div>
-            <div class="step-who">Ops: reviews daily report + responds to alerts</div></div>
+            <div class="step-header"><div class="step-title-row"><div class="step-title">Live &mdash; SEO runs on autopilot</div></div><span class="step-toggle">&#9660;</span></div>
+            <div class="step-desc-wrap"><div class="step-desc">All workflows run automatically. The team receives weekly reports without asking, gets alerts only when rankings drop, and generates meta tags and content briefs in minutes rather than hours. An SEO specialist is still needed to make decisions and publish content &mdash; but the research, monitoring, reporting, and routine writing tasks are handled by AI and n8n.</div>
+            <div class="step-who">Team reviews weekly report &mdash; acts on alerts</div></div>
           </div>
         </div>
       </div>
       <div class="timeline-col">
-        <div class="tl-cell"><div class="tl-week">Week 1&ndash;2</div><div class="tl-label">Historical data export</div><div class="tl-bar" style="background:var(--border2)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 2</div><div class="tl-label">Targets &amp; thresholds agreed</div><div class="tl-bar" style="background:var(--border2)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 3&ndash;4</div><div class="tl-label">Live data pipeline built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 4&ndash;6</div><div class="tl-label">Anomaly detection system</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 6&ndash;8</div><div class="tl-label">RTP change simulator</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 8&ndash;9</div><div class="tl-label">Historical validation</div><div class="tl-bar" style="background:var(--amber)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 9&ndash;10</div><div class="tl-label">Daily reports configured</div><div class="tl-bar" style="background:var(--accent)"></div></div>
-        <div class="tl-cell"><div class="tl-week">Week 10&ndash;11</div><div class="tl-label">Live &mdash; monitoring active</div><div class="tl-bar" style="background:var(--green)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 1</div><div class="tl-label">Data sources connected to n8n</div><div class="tl-bar" style="background:var(--border2)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 1&ndash;2</div><div class="tl-label">Meta title/desc generator built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 2&ndash;3</div><div class="tl-label">Content brief generator built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 2&ndash;3</div><div class="tl-label">Ranking drop alert built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 3&ndash;4</div><div class="tl-label">Internal linking suggester built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 3&ndash;4</div><div class="tl-label">Weekly report workflow built</div><div class="tl-bar" style="background:var(--accent)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 4&ndash;5</div><div class="tl-label">End-to-end testing</div><div class="tl-bar" style="background:var(--amber)"></div></div>
+        <div class="tl-cell"><div class="tl-week">Week 6&ndash;9</div><div class="tl-label">All workflows live</div><div class="tl-bar" style="background:var(--green)"></div></div>
       </div>
     </div>
   </div>
+
 
 </div>
 
@@ -829,7 +907,7 @@ footer{border-top:1px solid var(--border);padding:24px 48px;display:flex;align-i
   document.querySelectorAll('.step-row.now').forEach(r => r.classList.add('expanded'));
 
   // ── Footer stats ──
-  document.getElementById('footerStats').textContent = '5 automations · 1 in progress · 4 planned';
+  document.getElementById('footerStats').textContent = '6 automations · 2 in progress · 4 planned';
 </script>
 <div id="pw-overlay" style="display:none;position:fixed;inset:0;background:var(--bg);z-index:9999;align-items:center;justify-content:center;flex-direction:column;gap:0;">
   <div style="text-align:center;max-width:360px;width:100%;padding:0 24px;">
